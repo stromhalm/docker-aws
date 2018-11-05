@@ -1,12 +1,12 @@
 # Docker AWS
 ![Docker badge](https://img.shields.io/docker/build/fan12/docker-aws.svg)
 
-Simple docker image with ``ubuntu + docker + kubectl + google-cloud-sdk`` for automated image building and deployment of docker images to kubernetes clusters.
+Simple docker image with ``ubuntu + docker + awscli + awsebcli`` for automated image building and deployment of docker images to kubernetes clusters.
 
 This image is connected to Docker Hub and automatically build each time the master branch changes.
 
 Usage:
 
 ``
-docker pull fan12/docker-kubernetes
+docker pull fan12/docker-aws
 ``
