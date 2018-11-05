@@ -16,3 +16,5 @@ RUN sudo apt-get update && sudo apt-get install -y docker-ce
 RUN apt-get -y install python-setuptools
 RUN easy_install pip
 RUN pip install awscli --upgrade --user
+RUN pip install awsebcli --upgrade --user
+RUN export PATH=~/.local/bin:$PATH

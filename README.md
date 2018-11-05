@@ -1,5 +1,5 @@
-# Docker Kubernetes
-![Docker badge](https://img.shields.io/docker/build/fan12/docker-kubernetes.svg)
+# Docker AWS
+![Docker badge](https://img.shields.io/docker/build/fan12/docker-aws.svg)
 
 Simple docker image with ``ubuntu + docker + kubectl + google-cloud-sdk`` for automated image building and deployment of docker images to kubernetes clusters.
 
