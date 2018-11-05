@@ -1,5 +1,5 @@
 # Docker AWS
-![Docker badge](https://img.shields.io/docker/build/fan12/docker-aws.svg)
+![Docker badge](https://img.shields.io/docker/build/fan12/fan12-docker-aws.svg)
 
 Simple docker image with ``ubuntu + docker + awscli + awsebcli`` for automated image building and deployment of docker images to AWS Elastic Beanstalk.
 
@@ -8,5 +8,5 @@ This image is connected to Docker Hub and automatically build each time the mast
 Usage:
 
 ``
-docker pull fan12/docker-aws
+docker pull fan12/fan12-docker-aws
 ``
