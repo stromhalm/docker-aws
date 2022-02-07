@@ -2,9 +2,18 @@
 FROM docker:git
 
 # Install Python, AWS CLI and EB CLI
-RUN apk add --no-cache curl jq python3 py-pip
-RUN pip install awscli
-RUN pip install awsebcli
+RUN apk add --no-cache \
+        curl \
+        jq \
+        python3 \
+        py3-pip \
+    && pip3 install --upgrade pip \
+    && pip3 install --no-cache-dir \
+        awscli \
+        awsebcli \
+    && rm -rf /var/cache/apk/*
+
+RUN aws --version   # Just to make sure its installed alright
 
 # Install PHP and Composer
 RUN apk --update add wget curl git php php-curl php-openssl php-json php-phar php-dom php-iconv php-mbstring php-simplexml php-gd freetype-dev libpng-dev libjpeg-turbo-dev && rm /var/cache/apk/*
