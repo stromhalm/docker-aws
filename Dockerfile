@@ -3,6 +3,7 @@ FROM docker:git
 
 # Install Python, AWS CLI and EB CLI
 RUN apk add --no-cache \
+        gcc \
         curl \
         jq \
         python3 \
