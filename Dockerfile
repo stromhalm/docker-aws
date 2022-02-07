@@ -7,8 +7,8 @@ RUN apk add --no-cache \
         jq \
         python3 \
         py3-pip \
-    && pip3 install --upgrade pip \
-    && pip3 install --no-cache-dir \
+    && pip3 install --upgrade pip --ignore-installed six \
+    && pip3 install --no-cache-dir --ignore-installed six \
         awscli \
         awsebcli \
     && rm -rf /var/cache/apk/*
