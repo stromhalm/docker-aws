@@ -1,5 +1,5 @@
 # Fan12 Docker AWS
-![Docker badge](https://img.shields.io/docker/build/fan12/fan12-docker-aws.svg)
+![Docker badge](https://github.com/stromhalm/docker-aws/actions/workflows/docker-image.yml/badge.svg)
 
 Simple docker image with ``Alpine Linux + awsebcli + PHP Composer`` for automated image building and deployment of docker images to AWS Elastic Beanstalk.
 
