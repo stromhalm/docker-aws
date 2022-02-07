@@ -5,6 +5,7 @@ FROM docker:git
 RUN apk add --no-cache \
         gcc \
         cffi \
+        cryptography \
         curl \
         jq \
         python3 \
